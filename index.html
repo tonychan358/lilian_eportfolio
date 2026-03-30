@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-HK">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
     <!-- 引入 Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- 導覽列 Sticky Navigation -->
     <header class="navbar">
@@ -24,8 +27,9 @@
                 <a href="#home" class="nav-item">首頁</a>
                 <a href="#primary" class="nav-item">小學教學</a>
                 <a href="#kindergarten" class="nav-item">幼兒教育</a>
+                <a href="#media" class="nav-item">校園影音</a>
                 <a href="#extra" class="nav-item">課外活動</a>
-                <a href="#contact" class="nav-item">聯絡我</a>
+                <a href="#contact" class="nav-item">聯絡方法</a>
             </nav>
         </div>
     </header>
@@ -33,12 +37,18 @@
     <main>
         <!-- Home / Hero Section -->
         <section id="home" class="hero fade-in">
-            <div class="hero-content">
-                <h1 class="hero-title">激發學習熱情，陪伴探索世界</h1>
-                <p class="hero-subtitle">致力於透過 <span class="highlight">電子學習</span> 與 <span class="highlight">遊戲教學</span>，<br>打造充滿互動與歡樂的小學教室！</p>
-                <div class="hero-buttons">
-                    <a href="#primary" class="btn btn-primary">探索教學經驗</a>
-                    <a href="#contact" class="btn btn-secondary">與我聯絡</a>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">激發學習熱情，陪伴探索世界</h1>
+                    <p class="hero-subtitle">致力於透過 <span class="highlight">電子學習</span> 與 <span
+                            class="highlight">遊戲教學</span>，<br>打造充滿互動與歡樂的小學教室！</p>
+                    <div class="hero-buttons">
+                        <a href="#primary" class="btn btn-primary">探索教學經驗</a>
+                        <a href="#contact" class="btn btn-secondary">與我聯絡</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="cover_IMG.png" alt="教育工作者肖像" loading="lazy">
                 </div>
             </div>
         </section>
@@ -48,12 +58,13 @@
             <div class="container fade-in">
                 <h2 class="section-title">小學教學經驗 <span>Primary Education</span></h2>
                 <p class="section-desc">結合電子學習平台與遊戲式互動，翻轉傳統講述課堂，讓每一個孩子都能參與其中並愛上學習。</p>
-                
+
                 <div class="card-grid">
                     <!-- 卡片 1 -->
                     <div class="card">
-                        <div class="card-header icon-bg-primary">
-                            <span class="header-icon">🎒</span>
+                        <div class="card-header">
+                            <img src="./primary/%E5%B0%8F%E4%B8%80%E4%BA%BA%E6%96%87%E7%A7%91%20%EF%BC%88%E7%8D%B2%E5%8F%96%E5%84%AA%E7%95%B0%E6%88%90%E7%B8%BE%EF%BC%89/p1cover.jpeg"
+                                alt="小一人文科 - 優異成績教案" class="card-img" loading="lazy">
                         </div>
                         <div class="card-body">
                             <div class="tags">
@@ -61,13 +72,20 @@
                                 <span class="tag tag-orange">遊戲教學</span>
                             </div>
                             <h3>小一人文科 (獲優異成績🏆)</h3>
-                            <p>針對初小學童特性，將人文知識透過互動式遊戲融入課堂。使用平板及電子教學軟體進行隨堂挑戰，不僅提升學習興趣，更以此教案獲得優異成績表揚。</p>
+                            <p>針對初小學生的特性，將人文知識以體驗式活動融入課堂。透過故事形式及角色扮演進行教學，不僅提升學習興趣，更以此教案獲得優異成績表揚。</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-outline"
+                                data-pdf="./primary/%E5%B0%8F%E4%B8%80%E4%BA%BA%E6%96%87%E7%A7%91%20%EF%BC%88%E7%8D%B2%E5%8F%96%E5%84%AA%E7%95%B0%E6%88%90%E7%B8%BE%EF%BC%89/1D%E4%BA%BA%E6%96%87%E7%A7%91%E6%95%99%E6%A1%88%20-%20%E6%8F%90%E9%98%B2%E9%99%8C%E7%94%9F%E4%BA%BA%E6%95%99%E6%A1%88.pdf">教案示例</button>
+                            <button class="btn-outline"
+                                data-pdf="./primary/%E5%B0%8F%E4%B8%80%E4%BA%BA%E6%96%87%E7%A7%91%20%EF%BC%88%E7%8D%B2%E5%8F%96%E5%84%AA%E7%95%B0%E6%88%90%E7%B8%BE%EF%BC%89/1D%E4%BA%BA%E6%96%87%E7%A7%91%20-%20%E6%8F%90%E9%98%B2%E9%99%8C%E7%94%9F%E4%BA%BAppt%E6%95%99%E6%9D%90.pdf">教材示例</button>
                         </div>
                     </div>
                     <!-- 卡片 2 -->
                     <div class="card">
                         <div class="card-header">
-                            <img src="./primary/%E5%B0%8F%E4%BA%8C%E6%95%B8%E5%AD%B8%E7%A7%91/%E9%81%8A%E6%88%B2%E6%95%99%E5%AD%B8/IMG_1047.JPG" alt="小二數學科 - 遊戲教學" class="card-img" loading="lazy">
+                            <img src="./primary/%E5%B0%8F%E4%BA%8C%E6%95%B8%E5%AD%B8%E7%A7%91/p2cover.png"
+                                alt="小二數學科 - 遊戲教學" class="card-img" loading="lazy">
                         </div>
                         <div class="card-body">
                             <div class="tags">
@@ -77,11 +95,23 @@
                             <h3>小二數學科</h3>
                             <p>運用生活化的情境與遊戲化教學，幫助小二學生理解抽象的數學概念，並透過分組遊戲加深運算熟練度與團隊精神。</p>
                         </div>
+                        <div class="card-footer">
+                            <button class="btn-outline" data-gallery='[
+                                "./primary/%E5%B0%8F%E4%BA%8C%E6%95%B8%E5%AD%B8%E7%A7%91/%E9%81%8A%E6%88%B2%E6%95%99%E5%AD%B8/p2@1.png",
+                                "./primary/%E5%B0%8F%E4%BA%8C%E6%95%B8%E5%AD%B8%E7%A7%91/%E9%81%8A%E6%88%B2%E6%95%99%E5%AD%B8/p2@2.png",
+                                "./primary/%E5%B0%8F%E4%BA%8C%E6%95%B8%E5%AD%B8%E7%A7%91/%E9%81%8A%E6%88%B2%E6%95%99%E5%AD%B8/p2@3.png",
+                                "./primary/%E5%B0%8F%E4%BA%8C%E6%95%B8%E5%AD%B8%E7%A7%91/%E9%81%8A%E6%88%B2%E6%95%99%E5%AD%B8/p2@4.png",
+                                "./primary/%E5%B0%8F%E4%BA%8C%E6%95%B8%E5%AD%B8%E7%A7%91/%E9%81%8A%E6%88%B2%E6%95%99%E5%AD%B8/p2@5.png"
+                            ]'>遊戲教學</button>
+                            <button class="btn-outline" data-pdf="#">教案示例</button>
+                            <button class="btn-outline" data-pdf="#">教材示例</button>
+                        </div>
                     </div>
                     <!-- 卡片 3 -->
                     <div class="card">
                         <div class="card-header">
-                            <img src="./primary/%E5%B0%8F%E5%9B%9B%E4%BA%BA%E6%96%87%E7%A7%91/%E9%9B%BB%E5%AD%90%E6%95%99%E5%AD%B8%E4%BE%8B%E5%AD%90/%E5%90%84%E4%BA%BA%E5%AE%B6%E4%B8%AD%E7%9A%84%E7%94%A8%E9%A4%90%E7%A6%AE%E5%84%80.png" alt="小四人文科 - 電子教學成果" class="card-img" loading="lazy">
+                            <img src="./primary/%E5%B0%8F%E5%9B%9B%E4%BA%BA%E6%96%87%E7%A7%91/%E9%9B%BB%E5%AD%90%E6%95%99%E5%AD%B8%E4%BE%8B%E5%AD%90/%E5%90%84%E4%BA%BA%E5%AE%B6%E4%B8%AD%E7%9A%84%E7%94%A8%E9%A4%90%E7%A6%AE%E5%84%80.png"
+                                alt="小四人文科 - 電子教學成果" class="card-img" loading="lazy">
                         </div>
                         <div class="card-body">
                             <div class="tags">
@@ -91,6 +121,18 @@
                             <h3>小四人文科</h3>
                             <p>引導高年級學生利用網路資源與電子學習平台進行小組專題探究。除了提升課本內容的吸收，亦同步訓練資訊素養及發表能力。</p>
                         </div>
+                        <div class="card-footer">
+                            <button class="btn-outline" data-gallery='[
+                                "./primary/%E5%B0%8F%E5%9B%9B%E4%BA%BA%E6%96%87%E7%A7%91/%E9%9B%BB%E5%AD%90%E6%95%99%E5%AD%B8%E4%BE%8B%E5%AD%90/%E5%90%84%E4%BA%BA%E5%AE%B6%E4%B8%AD%E7%9A%84%E7%94%A8%E9%A4%90%E7%A6%AE%E5%84%80.png",
+                                "./primary/%E5%B0%8F%E5%9B%9B%E4%BA%BA%E6%96%87%E7%A7%91/%E9%9B%BB%E5%AD%90%E6%95%99%E5%AD%B8%E4%BE%8B%E5%AD%90/%E8%AA%8D%E8%AD%98%E4%B8%96%E7%95%8C%E5%90%84%E5%9C%B0%E7%9A%84%E7%BE%8E%E9%A3%9F.png",
+                                "./primary/%E5%B0%8F%E5%9B%9B%E4%BA%BA%E6%96%87%E7%A7%91/%E9%9B%BB%E5%AD%90%E6%95%99%E5%AD%B8%E4%BE%8B%E5%AD%90/%E8%AA%8D%E8%AD%98%E4%B8%96%E7%95%8C%E5%90%84%E5%9C%B0%E9%A3%B2%E9%A3%9F%E6%96%87%E5%8C%966%E6%A0%BC%E6%BC%AB%E7%95%AB.png",
+                                "./primary/%E5%B0%8F%E5%9B%9B%E4%BA%BA%E6%96%87%E7%A7%91/%E9%9B%BB%E5%AD%90%E6%95%99%E5%AD%B8%E4%BE%8B%E5%AD%90/%E8%AA%8D%E8%AD%98%E4%B8%AD%E5%9C%8B%E7%9A%84%E7%89%B9%E8%89%B2%E6%88%BF%E5%B1%8B.png"
+                            ]'>電子教學</button>
+                            <button class="btn-outline"
+                                data-pdf="./primary/%E5%B0%8F%E5%9B%9B%E4%BA%BA%E6%96%87%E7%A7%91/%E9%9B%BB%E5%AD%90%E6%95%99%E5%AD%B8%E4%BE%8B%E5%AD%90/27_11_%204A%E4%BA%BA%E6%96%87%E7%A7%91%E6%95%99%E6%A1%88_%E4%B8%96%E7%95%8C%E5%90%84%E5%9C%B0%E7%9A%84%E7%BE%8E%E9%A3%9F.pdf">教案示例</button>
+                            <button class="btn-outline"
+                                data-pdf="./primary/%E5%B0%8F%E5%9B%9B%E4%BA%BA%E6%96%87%E7%A7%91/%E9%9B%BB%E5%AD%90%E6%95%99%E5%AD%B8%E4%BE%8B%E5%AD%90/%E8%AA%8D%E8%AD%98%E5%B1%8F%E5%B1%B1%E6%96%87%E7%89%A9%E5%BE%91%E8%99%9B%E6%93%AC%E8%80%83%E5%AF%9F%E6%B4%BB%E5%8B%95.pdf">教材示例</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,33 +141,67 @@
         <!-- 幼兒教育經驗區塊 -->
         <section id="kindergarten" class="section">
             <div class="container fade-in">
-                <h2 class="section-title">幼教與專題研習 <span>Kindergarten Experiences</span></h2>
+                <h2 class="section-title">幼兒教育經驗 <span>Kindergarten Experiences</span></h2>
                 <div class="card-grid">
-                    <div class="card card-horizontal">
-                        <div class="card-img-container">
-                            <img src="./kindergarten/%E5%B0%88%E9%A1%8C%E7%A0%94%E7%BF%92%20-%20%E5%BE%9E%E8%AA%8D%E8%AD%98%E4%B8%96%E7%95%8C%E5%88%B0%E6%B7%B1%E5%85%A5%E8%AA%8D%E8%AD%98%E5%8D%B0%E5%BA%A6%E6%96%87%E5%8C%96/%E8%A3%BD%E4%BD%9C%E7%B1%83%E6%9E%9C%E9%BA%97.JPG" alt="印度文化專題" class="card-img">
+                    <!-- 卡片 1 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./kindergarten/%E5%B0%88%E9%A1%8C%E7%A0%94%E7%BF%92%20-%20%E5%BE%9E%E8%AA%8D%E8%AD%98%E4%B8%96%E7%95%8C%E5%88%B0%E6%B7%B1%E5%85%A5%E8%AA%8D%E8%AD%98%E5%8D%B0%E5%BA%A6%E6%96%87%E5%8C%96/cover.JPG"
+                                alt="印度文化專題" class="card-img" loading="lazy">
                         </div>
-                        <div class="card-content">
+                        <div class="card-body">
                             <h3>專題研習：印度藝術體驗館</h3>
-                            <p>透過圖畫書、實地體驗（如服飾與香料）與文化探索遊戲，引導幼兒打開世界觀，欣賞多元文化之美。</p>
+                            <p>透過七週「環遊世界」的專題研究，幼兒從認識七大洲五大洋與各國文化，到深入體驗到印度的藝術與節日，到最後將所學的內容化為一場展覽-「印度藝術體驗館」，並邀請校長、主任和其他班級的師生一同參與，見證學生的學習成果！
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-outline" data-gallery='[
+                                "./kindergarten/%E5%B0%88%E9%A1%8C%E7%A0%94%E7%BF%92%20-%20%E5%BE%9E%E8%AA%8D%E8%AD%98%E4%B8%96%E7%95%8C%E5%88%B0%E6%B7%B1%E5%85%A5%E8%AA%8D%E8%AD%98%E5%8D%B0%E5%BA%A6%E6%96%87%E5%8C%96/1.png",
+                                "./kindergarten/%E5%B0%88%E9%A1%8C%E7%A0%94%E7%BF%92%20-%20%E5%BE%9E%E8%AA%8D%E8%AD%98%E4%B8%96%E7%95%8C%E5%88%B0%E6%B7%B1%E5%85%A5%E8%AA%8D%E8%AD%98%E5%8D%B0%E5%BA%A6%E6%96%87%E5%8C%96/2.png",
+                                "./kindergarten/%E5%B0%88%E9%A1%8C%E7%A0%94%E7%BF%92%20-%20%E5%BE%9E%E8%AA%8D%E8%AD%98%E4%B8%96%E7%95%8C%E5%88%B0%E6%B7%B1%E5%85%A5%E8%AA%8D%E8%AD%98%E5%8D%B0%E5%BA%A6%E6%96%87%E5%8C%96/3.png",
+                                "./kindergarten/%E5%B0%88%E9%A1%8C%E7%A0%94%E7%BF%92%20-%20%E5%BE%9E%E8%AA%8D%E8%AD%98%E4%B8%96%E7%95%8C%E5%88%B0%E6%B7%B1%E5%85%A5%E8%AA%8D%E8%AD%98%E5%8D%B0%E5%BA%A6%E6%96%87%E5%8C%96/4.png"
+                            ]'>照片</button>
+                            <button class="btn-outline"
+                                data-pdf="./kindergarten/%E5%B0%88%E9%A1%8C%E7%A0%94%E7%BF%92%20-%20%E5%BE%9E%E8%AA%8D%E8%AD%98%E4%B8%96%E7%95%8C%E5%88%B0%E6%B7%B1%E5%85%A5%E8%AA%8D%E8%AD%98%E5%8D%B0%E5%BA%A6%E6%96%87%E5%8C%96/%E5%B0%88%E9%A1%8C%E7%A0%94%E7%BF%92%20-%20%E7%92%B0%E9%81%8A%E4%B8%96%E7%95%8C.pdf">成果展示</button>
+                            <button class="btn-outline"
+                                data-video="https://youtube.com/shorts/E8_TShsupeI?feature=share">影片</button>
                         </div>
                     </div>
-                    <div class="card card-horizontal">
-                        <div class="card-img-container">
-                            <img src="./kindergarten/%E5%B0%88%E9%A1%8C%E7%A0%94%E7%BF%92%20-%20%E8%AA%8D%E8%AD%98%E7%A8%AE%E5%AD%90%E7%9A%84%E5%82%B3%E6%92%AD/%E9%A2%A8%E5%8A%9B%E5%82%B3%E6%92%AD.JPG" alt="種子傳播專題" class="card-img">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./kindergarten/%E5%B0%88%E9%A1%8C%E7%A0%94%E7%BF%92%20-%20%E8%AA%8D%E8%AD%98%E7%A8%AE%E5%AD%90%E7%9A%84%E5%82%B3%E6%92%AD/1.png"
+                                alt="種子傳播專題" class="card-img" loading="lazy">
                         </div>
-                        <div class="card-content">
+                        <div class="card-body">
                             <h3>專題研習：認識種子的傳播</h3>
                             <p>結合大自然觀察與實驗操作，引導孩子從校園出發，親手參與觀察植物生長歷程，培養對生命的關懷。</p>
                         </div>
-                    </div>
-                    <div class="card card-horizontal">
-                        <div class="card-img-container">
-                            <img src="./kindergarten/%E8%A7%92%E8%90%BD%E6%B4%BB%E5%8B%95%E8%A8%AD%E8%A8%88/%E7%A3%81%E5%8A%9B%E5%AF%A6%E9%A9%97.jpg" alt="角落活動設計" class="card-img">
+                        <div class="card-footer">
+                            <button class="btn-outline" data-gallery='[
+                                "./kindergarten/%E5%B0%88%E9%A1%8C%E7%A0%94%E7%BF%92%20-%20%E8%AA%8D%E8%AD%98%E7%A8%AE%E5%AD%90%E7%9A%84%E5%82%B3%E6%92%AD/1.png",
+                                "./kindergarten/%E5%B0%88%E9%A1%8C%E7%A0%94%E7%BF%92%20-%20%E8%AA%8D%E8%AD%98%E7%A8%AE%E5%AD%90%E7%9A%84%E5%82%B3%E6%92%AD/2.png",
+                                "./kindergarten/%E5%B0%88%E9%A1%8C%E7%A0%94%E7%BF%92%20-%20%E8%AA%8D%E8%AD%98%E7%A8%AE%E5%AD%90%E7%9A%84%E5%82%B3%E6%92%AD/3.png"
+                            ]'>照片</button>
                         </div>
-                        <div class="card-content">
+                    </div>
+                    <!-- 卡片 3 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./kindergarten/%E8%A7%92%E8%90%BD%E6%B4%BB%E5%8B%95%E8%A8%AD%E8%A8%88/%E7%A3%81%E5%8A%9B%E5%AF%A6%E9%A9%97.jpg"
+                                alt="角落活動設計" class="card-img" loading="lazy">
+                        </div>
+                        <div class="card-body">
                             <h3>角落活動設計</h3>
                             <p>規劃以幼兒為中心的多元角落活動空間（如：語文角、建構角），利用自製互動教具（如磁力實驗）促進不同學習領域的發展。</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-outline" data-gallery='[
+                                "./kindergarten/%E8%A7%92%E8%90%BD%E6%B4%BB%E5%8B%95%E8%A8%AD%E8%A8%88/%E7%A3%81%E5%8A%9B%E5%AF%A6%E9%A9%97.jpg",
+                                "./kindergarten/%E8%A7%92%E8%90%BD%E6%B4%BB%E5%8B%95%E8%A8%AD%E8%A8%88/%E6%B0%B4%E9%96%8B%E8%8A%B1%E5%AF%A6%E9%A9%97.HEIC",
+                                "./kindergarten/%E8%A7%92%E8%90%BD%E6%B4%BB%E5%8B%95%E8%A8%AD%E8%A8%88/%E8%AA%8D%E8%AD%98%E5%9D%90%E6%A8%99.HEIC",
+                                "./kindergarten/%E8%A7%92%E8%90%BD%E6%B4%BB%E5%8B%95%E8%A8%AD%E8%A8%88/%E8%AA%8D%E8%AD%98%E8%8B%B1%E6%96%87%E6%95%B8%E5%AD%B8%E7%9A%84%E5%90%84%E7%A8%B1.HEIC",
+                                "./kindergarten/%E8%A7%92%E8%90%BD%E6%B4%BB%E5%8B%95%E8%A8%AD%E8%A8%88/%E8%AA%8D%E8%AD%98%E8%B2%A8%E5%B9%A3.HEIC"
+                            ]'>照片</button>
                         </div>
                     </div>
                 </div>
@@ -133,48 +209,102 @@
         </section>
 
         <!-- 課外活動區塊 -->
-        <section id="extra" class="section bg-light">
+        <!-- 校園影音製作區塊 -->
+        <section id="media" class="section bg-light">
             <div class="container fade-in">
-                <h2 class="section-title">課外活動與多媒體 <span>Extracurricular & Media</span></h2>
-                <p class="section-desc">結合 STEM 與多媒體拍攝專長，豐富校園生活。</p>
-                <div class="two-col-layout">
-                    <div class="layout-item">
-                        <div class="item-icon">🛠️</div>
-                        <h3>小小工程師 (STEM 活動)</h3>
-                        <p>透過動手組裝與任務解謎，培養學童邏輯思考與問題解決能力。利用積木、機械基礎套件進行專題式任務實作。</p>
-                        <div class="photo-gallery">
-                            <img src="./課外活動%20-%20小小工程師/IMG_4391.JPG" alt="小小工程師活動花絮" loading="lazy">
-                            <img src="./課外活動%20-%20小小工程師/IMG_6309.JPG" alt="小小工程師活動花絮" loading="lazy">
+                <h2 class="section-title">校園影音製作 <span>Video Production</span></h2>
+                <p class="section-desc">專精於校園活動紀錄與特色影片製作，透過視覺影像傳播教育理念。</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header video-thumbnail" data-video="https://youtu.be/Hpj1gAhzYik">
+                            <img src="https://img.youtube.com/vi/Hpj1gAhzYik/mqdefault.jpg" alt="新春影片預覽" loading="lazy">
+                            <div class="play-overlay">▶</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>為學校拍攝及製作新春影片</h3>
+                            <p>記錄校園新春氣氛，結合剪輯與視覺特效呈現節慶活力。</p>
                         </div>
                     </div>
-                    <div class="layout-item">
-                        <div class="item-icon">🎬</div>
-                        <h3>校園影音製作</h3>
-                        <p>專精於校園活動紀錄與特色影片製作，例如：剪輯「學校新春影片」，透過視覺影像傳遞校園活力與辦學理念。</p>
-                        <div class="video-container">
-                            <p class="note">（提示：新春影片可於展示前上傳平台並嵌入於此）</p>
+                    <div class="card">
+                        <div class="card-header video-thumbnail" data-video="https://youtu.be/lhvmAm03K-0">
+                            <img src="https://img.youtube.com/vi/lhvmAm03K-0/mqdefault.jpg" alt="瀕危物種影片預覽"
+                                loading="lazy">
+                            <div class="play-overlay">▶</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>瀕危物種教學影片</h3>
+                            <p>設計與拍攝科普教學影像，引導學生認識並關懷自然界的瀕危物種。</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header video-thumbnail" data-video="https://youtu.be/ZBU990qzjyw">
+                            <img src="https://img.youtube.com/vi/ZBU990qzjyw/mqdefault.jpg" alt="戶外探索影片預覽"
+                                loading="lazy">
+                            <div class="play-overlay">▶</div>
+                        </div>
+                        <div class="card-body">
+                            <h3>「Family Habitat」戶外探索紀錄</h3>
+                            <p>帶領幼兒前往戶外探索基地，並拍攝及製作精彩的學習紀錄影片。</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
+        <!-- 小小工程師區塊 (STEM) -->
+        <section id="stem" class="section">
+            <div class="container fade-in text-center">
+                <h2 class="section-title">小小工程師 (STEM 活動) <span>STEM Education</span></h2>
+                <div style="max-width: 900px; margin: 0 auto; text-align: left;">
+                    <div class="item-icon">🛠️</div>
+                    <h3 style="text-align: center;">手動組裝與任務解謎</h3>
+                    <p style="text-align: center; margin-bottom: 30px;">
+                        透過動手組裝與任務解謎，培養學童邏輯思考與問題解決能力。利用積木、機械基礎套件進行專題式任務實作。</p>
+                    <div class="photo-grid-4">
+                        <img src="./%E8%AA%B2%E5%A4%96%E6%B4%BB%E5%8B%95%20-%20%E5%B0%8F%E5%B0%8F%E5%B7%A5%E7%A8%8B%E5%B8%AB/1.png"
+                            alt="小小工程師活動花絮" loading="lazy">
+                        <img src="./%E8%AA%B2%E5%A4%96%E6%B4%BB%E5%8B%95%20-%20%E5%B0%8F%E5%B0%8F%E5%B7%A5%E7%A8%8B%E5%B8%AB/2.png"
+                            alt="小小工程師活動花絮" loading="lazy">
+                        <img src="./%E8%AA%B2%E5%A4%96%E6%B4%BB%E5%8B%95%20-%20%E5%B0%8F%E5%B0%8F%E5%B7%A5%E7%A8%8B%E5%B8%AB/3.png"
+                            alt="小小工程師活動花絮" loading="lazy">
+                        <img src="./%E8%AA%B2%E5%A4%96%E6%B4%BB%E5%8B%95%20-%20%E5%B0%8F%E5%B0%8F%E5%B7%A5%E7%A8%8B%E5%B8%AB/4.png"
+                            alt="小小工程師活動花絮" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- 聯絡區塊 -->
         <section id="contact" class="section hero text-center">
             <div class="container fade-in">
-                <h2 class="section-title">歡迎與我聯繫</h2>
+                <h2 class="section-title">聯絡方法</h2>
                 <p>期望能將我對教學的熱忱與經驗，貢獻於貴校的教育願景中。</p>
                 <div class="contact-methods">
-                    <a href="mailto:example@email.com" class="btn btn-primary">✉️ 寄送電子郵件</a>
+                    <a href="mailto:liliancheuklamlamlam@gmail.com" class="btn btn-primary">✉️ 寄送電子郵件</a>
+                    <a href="tel:+85260649787" class="btn btn-primary" style="margin-left: 10px;">📞 電話致電 : 6064
+                        9787</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 教學作品集展示版權所有</p>
+        <p>@陳老師教學經驗展示，歡迎交流</p>
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Viewer Modal -->
+    <div id="viewer-modal" class="viewer-modal">
+        <div class="viewer-content">
+            <button class="viewer-close">&times;</button>
+            <img src="" alt="" class="viewer-image">
+            <iframe src="" class="viewer-iframe" style="display: none;"></iframe>
+            <button class="viewer-nav viewer-prev">&lt;</button>
+            <button class="viewer-nav viewer-next">&gt;</button>
+            <div class="viewer-counter"></div>
+        </div>
+    </div>
 </body>
+
 </html>
