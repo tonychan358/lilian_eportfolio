@@ -159,7 +159,11 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (pdfBtn) {
             e.preventDefault();
             const url = pdfBtn.getAttribute('data-pdf');
-            openViewer('pdf', url);
+            if (window.innerWidth <= 768 || /Mobi|Android/i.test(navigator.userAgent)) {
+                window.open(url, '_blank');
+            } else {
+                openViewer('pdf', url);
+            }
         } else if (videoBtn) {
             e.preventDefault();
             const url = videoBtn.getAttribute('data-video');
@@ -173,4 +177,28 @@ document.addEventListener("DOMContentLoaded", () => {
         viewerImg.addEventListener('contextmenu', e => e.preventDefault());
         viewerImg.addEventListener('dragstart', e => e.preventDefault());
     }
+
+    // --- 自動通知功能：有人瀏覽時發送 Email ---
+    function notifyMe() {
+        // 如果還沒設定 Key，先不執行以免報錯
+        if (typeof emailjs === 'undefined' || !emailjs._publicKey || emailjs._publicKey === 'YOUR_PUBLIC_KEY') {
+            console.log("EmailJS 尚未設定，跳過通知。");
+            return;
+        }
+
+        const visitorData = {
+            to_email: "liliancheuklamlamlam@gmail.com",
+            time: new Date().toLocaleString('zh-HK'),
+            userAgent: navigator.userAgent,
+            page: window.location.pathname
+        };
+
+        // 請在這裡填入你的 SERVICE_ID 和 TEMPLATE_ID
+        emailjs.send("service_qq10i1k", "template_gyx78gf", visitorData)
+            .then(() => console.log("👀 訪客通知已送出"))
+            .catch((err) => console.error("❌ 通知發送失敗", err));
+    }
+
+    // 延遲一點執行，確保頁面資源都載入
+    setTimeout(notifyMe, 2000);
 });

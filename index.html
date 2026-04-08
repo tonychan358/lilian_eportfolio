@@ -11,6 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // 在此填入你的 Public Key
+            emailjs.init({ publicKey: "i3P3RmG4CrF3RighR" });
+        })();
+    </script>
 </head>
 
 <body>
@@ -39,7 +47,7 @@
         <section id="home" class="hero fade-in">
             <div class="container hero-grid">
                 <div class="hero-content">
-                    <h1 class="hero-title">激發學習熱情，陪伴探索世界</h1>
+                    <h1 class="hero-title">激發學習熱情，<br>陪伴探索世界</h1>
                     <p class="hero-subtitle">致力於透過 <span class="highlight">電子學習</span> 與 <span
                             class="highlight">遊戲教學</span>，<br>打造充滿互動與歡樂的小學教室！</p>
                     <div class="hero-buttons">
@@ -102,7 +110,7 @@
                                 "./primary/%E5%B0%8F%E4%BA%8C%E6%95%B8%E5%AD%B8%E7%A7%91/%E9%81%8A%E6%88%B2%E6%95%99%E5%AD%B8/p2@3.png",
                                 "./primary/%E5%B0%8F%E4%BA%8C%E6%95%B8%E5%AD%B8%E7%A7%91/%E9%81%8A%E6%88%B2%E6%95%99%E5%AD%B8/p2@4.png",
                                 "./primary/%E5%B0%8F%E4%BA%8C%E6%95%B8%E5%AD%B8%E7%A7%91/%E9%81%8A%E6%88%B2%E6%95%99%E5%AD%B8/p2@5.png"
-                            ]'>遊戲教學</button>
+                            ]'>遊戲教學</button
                         </div>
                     </div>
                     <!-- 卡片 3 -->
